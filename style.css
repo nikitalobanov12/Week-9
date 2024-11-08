@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: "Mukta", sans-serif;
+    background-color: #0f172a;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    color: red;
+    font-weight: 600;
+}
+
+header p {
+    text-align: right;
+}
+h1 {
+    margin: 0 0 4rem;
+    font-size: 3rem;
+}
+header {
+    margin:0;
+    padding: 1rem 1rem 0;
+}
+header {
+    background-color: white;
+}
+
+section{
+    margin: 1rem 1rem 2rem;
+    padding: 1rem;
+    background-color: #f1f5f9;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    border-top: 1px dotted #475569;
+    border-bottom: 1px dotted #475569;
+}
+input, select, button, textarea {
+    width: 100%;
+    border: .5px solid #475569 ;
+    height: 2rem;
+}
+select {
+    background-color: #f1f5f9;
+    border-radius: 8px;
+}
+.radio {
+    width: auto;
+
+}
+fieldset label {
+    display: flex;
+    align-items: center;
+}
+fieldset label input  {
+    width: auto;
+}   
+fieldset {
+    display: flex;
+    gap: 4px;
+    padding: .5rem
+
+}
+
+button {
+    margin: 1rem 0 0;
+    line-height: 2rem;
+
+    font-weight: 700;
+    border-radius: 8px;
+}
+.navy {
+    background-color: #0f172a;
+    color: white;
+}
+
+
+footer{
+    text-align: center;
+    color:white;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    border-color: mediumvioletred;
+    outline: mediumvioletred 3px solid;
+}
+
+@media (min-width: 900px) {
+    h1, header p {
+        text-align: center;
+    }
+   header{
+    padding: 1rem;
+   }
+   section {
+    max-width: 900px;
+    margin: 1rem auto 2rem;
+    
+}
+.forms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+input, select, button, textarea{
+    grid-column: span 2;
+}
+label {
+    text-align: right;
+}
+fieldset {
+    grid-column: 2/4;
+}
+   .submit {
+    display: flex;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+   }
+   
+}

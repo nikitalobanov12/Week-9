@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Finder Nikita Lobanov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A-6: Podcast Finder</h1>
+        <p>Created by Nikita Lobanov</p>
+    </header>
+
+    <section>
+        <h2>Find a Podcast</h2>
+        <form action="https://www.listennotes.com/search" method="get">
+            <div class="forms">
+            <label for="keyword">Keyword:</label>
+            <input type="text" id="keyword" name="q" required>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="" selected disabled>Select type</option>
+                <option value="episode">Episode</option>
+                <option value="podcast">Podcast</option>
+                <option value="curated">Curated</option>
+            </select>
+
+            <label for="min-length">Minimum Length (min):</label>
+            <input type="number" id="min-length" name="min_length">
+
+            <label for="max-length">Maximum Length (max):</label>
+            <input type="number" id="max-length" name="max_length">
+
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language">
+
+            <fieldset>
+                <legend>Sort by date?</legend>
+                <label>
+                    Yes
+                    <input class="radio" type="radio" name="sort_by_date" value="yes"> 
+                </label>
+                <label>
+                    No
+                    <input type="radio" class="radio" name="sort_by_date" value="no" checked>
+                </label>
+            </fieldset>
+        </div>
+        <div class="submit">
+            <button type="submit" class="navy">Search</button>
+            <button type="reset">Clear</button>
+        </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <div class="forms">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <select id="age" name="age" required>
+                <option value="" selected disabled>Select your age</option>
+                <option value="under-20">Under 20</option>
+                <option value="20-29">20 - 29</option>
+                <option value="30-39">30 - 39</option>
+                <option value="40-49">40 - 49</option>
+                <option value="50-59">50 - 59</option>
+                <option value="60-69">60 - 69</option>
+                <option value="70-79">70 - 79</option>
+                <option value="80-up">80 and up</option>
+            </select>
+
+            <fieldset>
+                <legend>Categories you are interested in:</legend>
+                <label>
+                    True Crime
+                    <input type="checkbox" name="categories" value="true-crime"> 
+                </label>
+                <label>
+                    News
+                    <input type="checkbox" name="categories" value="news"> 
+                </label>
+                <label>
+                    Comedy
+                    <input type="checkbox" name="categories" value="comedy"> 
+                </label>
+                <label>
+                    IT
+                    <input type="checkbox" name="categories" value="it"> 
+                </label>
+            </fieldset>
+
+            <label class="feedback" for="feedback">Your feedback to our service:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            </div>
+            <div class="submit">
+            <button class="navy" type="submit">Send</button>
+            <button type="reset">Clear</button>
+                </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;2024 Nikita Lobanov </p>
+    </footer>
+</body>
+</html>
